@@ -11,9 +11,11 @@ class GeneralView:
         self.frame = tk.Frame(root)
         self.frame.pack()
 
+        # แสดงข้อมูลผู้ขับขี่
         self.label = tk.Label(self.frame, text=f"ข้อมูลผู้ขับขี่: {driver['ID_Driver']}")
         self.label.pack(pady=5)
 
+        # แสดงสถานะของผู้ขับขี่
         self.status_label = tk.Label(self.frame, text=f"สถานะ: {driver['Status']}")
         self.status_label.pack(pady=5)
 

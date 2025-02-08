@@ -11,6 +11,7 @@ class PublicDriverView:
         self.frame = tk.Frame(root)
         self.frame.pack()
 
+         # แสดงข้อมูลผู้ขับขี่
         self.label = tk.Label(self.frame, text=f"ข้อมูลผู้ขับขี่: {driver['ID_Driver']}")
         self.label.pack(pady=5)
 
